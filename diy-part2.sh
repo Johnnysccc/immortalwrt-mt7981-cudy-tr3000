@@ -22,11 +22,11 @@ sed -i 's/root:::0:/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/g' pa
 # 设置默认WiFi（2.4G加密降级兼容老设备）
 uci -d files set wireless.@wifi-iface[0].ssid='HeShuang'
 uci -d files set wireless.@wifi-iface[0].key='HeShuang'
-uci -d files set wireless.@wifi-iface[0].encryption='none'
+uci -d files set wireless.@wifi-iface[0].encryption='psk'
 
 uci -d files set wireless.@wifi-iface[1].ssid='HeShuang_5G'
 uci -d files set wireless.@wifi-iface[1].key='HeShuang'
-uci -d files set wireless.@wifi-iface[1].encryption='none'
+uci -d files set wireless.@wifi-iface[1].encryption='psk2
 
 uci -d files commit wireless
 
