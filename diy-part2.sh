@@ -26,7 +26,7 @@ uci -d files set wireless.@wifi-iface[0].encryption='psk'
 
 uci -d files set wireless.@wifi-iface[1].ssid='HeShuang_5G'
 uci -d files set wireless.@wifi-iface[1].key='HeShuang'
-uci -d files set wireless.@wifi-iface[1].encryption='psk2
+uci -d files set wireless.@wifi-iface[1].encryption='psk2'
 
 uci -d files commit wireless
 
@@ -48,3 +48,4 @@ tar -zxvf "clash_meta.tar.gz" -C files/etc/openclash/core/
 mv files/etc/openclash/core/clash files/etc/openclash/core/clash_meta
 chmod +x files/etc/openclash/core/clash_meta
 rm -f "clash_meta.tar.gz"
+#
